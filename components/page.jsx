@@ -5,10 +5,10 @@ import Stairs from "./Layout/Stairs";
 export default function Page({children}) {
     return (
         <>
-            <Stairs>
+            <Inner>
                 <Header />
                 <main>{children}</main>
-            </Stairs>
+            </Inner>
         </>
     )
 }
