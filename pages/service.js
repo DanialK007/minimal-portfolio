@@ -1,4 +1,4 @@
-import Page from "@/components/page";
+import Page from "@/components/page.jsx";
 
 export default function Service() {
     return (

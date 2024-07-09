@@ -5,6 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 0;
+}
+
+::selection {
+    background-color: rgb(239 68 68);
+    color: white;
+}
+
 .loading{
     animation: name duration timing-function delay iteration-count direction fill-mode;
     animation: loading 3s cubic-bezier(0.5, 0, 0.5, 0);
