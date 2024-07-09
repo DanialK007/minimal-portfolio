@@ -1,13 +1,39 @@
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import { Component } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/components/image/K-logo.svg"
+import Lenis from "@studio-freight/lenis";
+import logo from "@/components/image/K-logo.svg";
 
 import "./global.css";
 import "./output.css";
 
-const App = ({Component, pageProps}) => {
+const App = ({ Component, pageProps }) => {
     const router = useRouter();
+    const lenisRef = useRef(null);
+
+    useEffect(() => {
+        // Initialize Lenis
+        const lenis = new Lenis({
+            duration: 1.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            smoothWheel: true,
+        });
+
+        lenisRef.current = lenis;
+
+        // RAF callback for Lenis
+        const raf = (time) => {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        };
+
+        requestAnimationFrame(raf);
+
+        // Clean up Lenis on component unmount
+        return () => {
+            lenis.destroy();
+        };
+    }, []);
 
     return (
         <>
@@ -39,7 +65,7 @@ const App = ({Component, pageProps}) => {
                 </motion.div>
             </AnimatePresence>
         </>
-    )
-}
+    );
+};
 
 export default App;

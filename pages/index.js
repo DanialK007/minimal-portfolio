@@ -10,8 +10,8 @@ export default function Home() {
             <div className="pt-28 lg:pt-32 p-4 lg:p-5 h-screen flex flex-col lg:flex-row justify-between">
                 <div className="flex h-full flex-col justify-between">
                     <div>
-                        <div className="text-2xl lg:text-6xl lg:leading-[4rem] py-1 ps- lg:ps-24">My name is Kaung Khant Kyaw.</div>
-                        <div className="text-2xl lg:text-6xl lg:leading-[4rem] py-1">I'm a <span className="text-red-500">Freelance Frontend Developer</span> based in Mandalay (MM).</div>
+                        <div className="text-2xl lg:text-6xl lg:leading-[4rem] lg:py-1 lg:ps-24">My name is Kaung Khant Kyaw.</div>
+                        <div className="text-2xl lg:text-6xl lg:leading-[4rem] lg:py-1">I'm a <span className="text-red-500">Freelance Frontend Developer</span> based in Mandalay (MM).</div>
 
                         <a href="" className="block w-fit">
                             <FloatBtn className="text-lg">kaungkhantkyawdk@gmail.com</FloatBtn>
