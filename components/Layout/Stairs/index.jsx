@@ -49,7 +49,7 @@ function Stairs({ children }) {
         }
     }
 
-    const nbOfColumns = 8;
+    const nbOfColumns = 10;
 
     return (
         <>

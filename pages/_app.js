@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
 import logo from "@/components/image/K-logo.svg";
+import Preloader from "@/components/Layout/Preloader";
 
 import "./global.css";
 import "./output.css";
@@ -10,6 +11,7 @@ import "./output.css";
 const App = ({ Component, pageProps }) => {
     const router = useRouter();
     const lenisRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         // Initialize Lenis
@@ -29,6 +31,16 @@ const App = ({ Component, pageProps }) => {
 
         requestAnimationFrame(raf);
 
+        setTimeout( () => {
+
+            setIsLoading(false);
+
+            document.body.style.cursor = 'default'
+
+            window.scrollTo(0,0);
+
+          }, 4000)
+
         // Clean up Lenis on component unmount
         return () => {
             lenis.destroy();
@@ -40,9 +52,11 @@ const App = ({ Component, pageProps }) => {
             <title>Portfolio</title>
             <link rel="icon" href={logo} />
 
-            <div className="fixed flex items-center justify-center top-0 left-0 w-full h-full bg-white -z-10 opacity-0 loading">
+            {/* <div className="fixed flex items-center justify-center top-0 left-0 w-full h-full bg-white -z-10 opacity-0 loading">
                 <div className="w-10 h-10 bg-black animate-spin rounded-md"></div>
-            </div>
+            </div> */}
+
+            {isLoading && <Preloader />}
 
             <AnimatePresence mode="wait">
                 <motion.div key={router.pathname}>

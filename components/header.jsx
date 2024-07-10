@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import classNames from "classnames";
+import TextAnimate from "./Layout/TextAnimate";
 
 const Header = () => {
     const [burmaTimeNow, setBurmaTimeNow] = useState('');
@@ -38,17 +39,17 @@ const Header = () => {
         <>
             <nav className="absolute top-0 left-0 z-[5] w-full p-4 lg:p-5 bg-white">
                 <div className="flex justify-between border-b border-black pb-5 text-[0.75rem] lg:text-[0.9rem]">
-                    <div>
+                    <TextAnimate>
                         <div className="text-[0.7rem] lg:text-sm text-zinc-600 pb-1">Name</div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">Kaung Khant Kyaw™, 2024</div>
                         <div className="leading-[0.8rem] lg:leading-5 ">UTC +6:30 ({burmaTimeNow}, MM)</div>
-                    </div>
-                    <div>
+                    </TextAnimate>
+                    <TextAnimate>
                         <div className="text-[0.7rem] lg:text-sm text-zinc-600 pb-1">Status</div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">Currently available for</div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">freelance projects</div>
-                    </div>
-                    <div className="hidden lg:block">
+                    </TextAnimate>
+                    <TextAnimate className="hidden lg:block">
                         <div className="text-[0.7rem] lg:text-sm text-zinc-600 pb-1">Sitemap</div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">
                             <Link className="hover:underline" href="/" onClick={closeMenu}>Home</Link>,
@@ -59,19 +60,19 @@ const Header = () => {
                             <Link className="hover:underline" href="/service" onClick={closeMenu}>Services</Link>,
                             <Link className="hover:underline" href="/contact" onClick={closeMenu}> Contact</Link>
                         </div>
-                    </div>
-                    <div className="pe-6 hidden lg:block">
+                    </TextAnimate>
+                    <TextAnimate className="pe-6 hidden lg:block lg:pe-5">
                         <div className="text-[0.7rem] lg:text-sm text-zinc-600 pb-1">Let's Connect</div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">
-                            <a className="hover:underline" href="https://github.com/kaungkhantkyaw" target="_blank" rel="noopener noreferrer">GitHub</a>,
-                            <a className="hover:underline" href="https://www.linkedin.com/in/kaung-khant-kyaw-626a6722/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>,
+                            <a className="hover:underline" href="https://github.com/DanialK007" target="_blank" rel="noopener noreferrer">GitHub</a>,
+                            <a className="hover:underline" href="https://www.linkedin.com/in/kaung-khant-kyaw-688141212/" target="_blank" rel="noopener noreferrer"> LinkedIn</a>,
                             <a className="hover:underline" href="mailto:kaungkhantkyawdk@gmail.com" target="_blank" rel="noopener noreferrer"> Email</a>
                         </div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">
-                            <a className="hover:underline" href="https://t.me/kaungkhantkyaw" target="_blank" rel="noopener noreferrer">Telegram</a>,
+                            <a className="hover:underline" href="https://t.me/DanialK007" target="_blank" rel="noopener noreferrer">Telegram</a>,
                             <a className="hover:underline" href="https://www.instagram.com/kaungkhantkyawdk/" target="_blank" rel="noopener noreferrer"> Instagram</a>
                         </div>
-                    </div>
+                    </TextAnimate>
                 </div>
             </nav>
             <div id="menuBtn" className="lg:hidden fixed bottom-5 right-5 z-[9]">
@@ -106,10 +107,10 @@ const Header = () => {
                 <div className="mt-10">
                     <div className="text-lg text-zinc-500 pb-4 border-b border-white/20">Let's Connect</div>
                     <div className="text-xl uppercase grid grid-cols-2 gap-5 py-4">
-                        <a className="hover:underline" href="https://github.com/kaungkhantkyaw" target="_blank" rel="noopener noreferrer">GitHub</a>
-                        <a className="hover:underline" href="https://www.linkedin.com/in/kaung-khant-kyaw-626a6722/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a className="hover:underline" href="https://github.com/DanialK007" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a className="hover:underline" href="https://www.linkedin.com/in/kaung-khant-kyaw-688141212/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <a className="hover:underline" href="mailto:kaungkhantkyawdk@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-                        <a className="hover:underline" href="https://t.me/kaungkhantkyaw" target="_blank" rel="noopener noreferrer"> Telegram</a>
+                        <a className="hover:underline" href="https://t.me/DanialK007" target="_blank" rel="noopener noreferrer"> Telegram</a>
                         <a className="hover:underline" href="https://www.instagram.com/kaungkhantkyawdk/" target="_blank" rel="noopener noreferrer"> Instagram</a>
                     </div>
                 </div>
