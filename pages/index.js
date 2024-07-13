@@ -13,7 +13,7 @@ export default function Home() {
                     <TextAnimate>
                         <div className="text-2xl lg:text-6xl lg:leading-[4rem] lg:p-1"><span className="w-20 lg:w-28 inline-block"></span> My name is Kaung Khant Kyaw. I'm a <span className="text-red-500">Freelance Frontend Developer</span> based in Mandalay (MM).</div>
 
-                        <a href="" className="block w-fit">
+                        <a href="" className="block w-fit pt-10">
                             <FloatBtn className="text-lg">kaungkhantkyawdk@gmail.com</FloatBtn>
                         </a>
                     </TextAnimate>

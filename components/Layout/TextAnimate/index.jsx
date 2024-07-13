@@ -27,8 +27,8 @@ export default function TextAnimate({ children, className }) {
 
     return (
         <>
-            <div className={classNames('w-fit h-fit overflow-hidden relative', className)}>
-                <motion.div {...anim(opacity)} className='absolute w-full h-full z-10 bg-white'>
+            <div className={classNames('w-fit h- fit overflow-hidden relative', className)}>
+                <motion.div {...anim(opacity)} className='absolute w-full h-full z-10 top-0 left-0 bg-white'>
                 </motion.div>
                 {children}
             </div>
