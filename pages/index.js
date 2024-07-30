@@ -4,6 +4,7 @@ import profile from "@/components/image/MyProfile.png";
 import project from "@/components/image/leigaMockup.png";
 import FloatBtn from "@/components/FloatBtn.jsx";
 import TextAnimate from "@/components/Layout/TextAnimate";
+import Work from "@/components/Work";
 
 export default function Home() {
     return (
@@ -46,6 +47,7 @@ export default function Home() {
                     <div className="absolute -top-5 left-0 lg:top-auto lg:left-auto lg:bottom-0 lg:right-5 text-xs lg:text-sm text-zinc-500">Use menu to explore</div>
                 </div>
             </div>
+            <Work />
         </Page>
     )
 }

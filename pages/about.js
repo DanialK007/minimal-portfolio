@@ -29,16 +29,37 @@ const projectList = [
     { name: "iOS 18", url: "https://ios18-controll-center.onrender.com" , tech: "Tailwind, Javascript", date: "May 2024" },
   ];
 
-  const whoAmI = ["Developer", "Designer"]
+    
+
 
 export default function About() {
     const { x, y } = UseMousePosition();
     const [maskPosition, setMaskPosition] = useState({ x: 0, y: 0 });
+    const whoAmI = ["Developer", "Designer"]
+    // const [projectList, setProjects] = useState([]);
+    // const size = 200; 
 
     useEffect(() => {
         setMaskPosition({ x: x, y: y });
     }, [x, y]);
-    const size = 200; 
+
+    // useEffect(() => {
+    //     fetch("http://localhost:5000/api/projects")
+    //         .then(response => response.json())
+    //         .then(data => { 
+    //             console.log(data)
+    //             setProjects(data);
+    //         })
+    //         .catch(error => {
+    //             console.log("Error fetching data: ", error);
+    //         });
+    // }, []);
+
+    // console.log("Projects")
+    // console.log(projectList);
+    // console.log(typeof(projectList));
+    // console.log(projectLister);
+    // console.log(typeof(projectLister));
 
     return (
         <Page>
@@ -115,7 +136,6 @@ export default function About() {
                         <div className="text-xl group-hover:text-2xl duration-300 font-semibold col-span-2 flex gap-2 items-center">
                         <LinkPreview url={project.url}>
                         <div className="w-fit flex gap-2 items-center text-black group-hover:text-white hover:text-black relative peer">
-                            <div className="w-full h-full absolute z-20 peer"></div>
                             <span className="z-1 0">{project.name}</span>
                             <span className="text-sm z-1 0 group-hover:text-xl peer-hover:rotate-0 duration-500 -rotate-45"><FaArrowRight /></span>
                             {/* <div className="absolute right-0 -z-0 w-[200px] h-[130px] -translate-x-full duration-300 peer-hover:translate-x-10 rounded-e-full bg-white"></div> */}
@@ -132,8 +152,8 @@ export default function About() {
                 <ContainerScroll
                     titleComponent={
                     <>
-                        <div className="flex items-center justify-center pb-10">
-                            <div className="text-4xl lg:text-7xl uppercase text-center w-fit mx-auto font-semibold">I am a <FlipWords words={whoAmI} /></div>
+                        <div className="flex items-center justify-center md:pb-10 lg:h-[80px]">
+                            <div className="text-4xl md:text-5xl lg:text-7xl uppercase text-center w-fit mx-auto font-semibold">I am a <FlipWords words={whoAmI} /></div>
                         </div>
                     </>
                     }

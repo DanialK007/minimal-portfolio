@@ -16,8 +16,8 @@ const App = ({ Component, pageProps }) => {
     useEffect(() => {
         // Initialize Lenis
         const lenis = new Lenis({
-            duration: 1.5,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            duration: 2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(3, -10 * t)),
             smoothWheel: true,
         });
 
@@ -32,13 +32,9 @@ const App = ({ Component, pageProps }) => {
         requestAnimationFrame(raf);
 
         setTimeout( () => {
-
             setIsLoading(false);
-
-            document.body.style.cursor = 'default'
-
             window.scrollTo(0,0);
-
+            document.body.style.cursor = 'default'
           }, 4000)
 
         // Clean up Lenis on component unmount
@@ -56,7 +52,7 @@ const App = ({ Component, pageProps }) => {
                 <div className="w-10 h-10 bg-black animate-spin rounded-md"></div>
             </div> */}
 
-            {isLoading && <Preloader />}
+            {/* {isLoading && <Preloader />} */}
 
             <AnimatePresence mode="wait">
                 <motion.div key={router.pathname}>

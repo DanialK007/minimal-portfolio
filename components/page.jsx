@@ -6,7 +6,7 @@ export default function Page({children}) {
     return (
         <>
             <Inner>
-                <Header />
+                {/* <Header /> */}
                 <main>{children}</main>
             </Inner>
         </>

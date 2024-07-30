@@ -12,8 +12,8 @@ export const LinkPreview = ({
   children,
   url,
   className,
-  width = 200,
-  height = 125,
+  width = 400,
+  height = 225,
   quality = 50,
   layout = "fixed",
   isStatic = false,
@@ -29,8 +29,8 @@ export const LinkPreview = ({
       colorScheme: "dark",
       "viewport.isMobile": false,
       "viewport.deviceScaleFactor": 1,
-      "viewport.width": width * 9,
-      "viewport.height": height * 7,
+      "viewport.width": width * 4,
+      "viewport.height": height * 4,
     });
     src = `https://api.microlink.io/?${params}`;
   } else {
@@ -46,8 +46,8 @@ export const LinkPreview = ({
 
   const handleMouseMove = (event) => {
     const targetRect = event.target.getBoundingClientRect();
-    const eventOffsetX = event.clientX / 2;
-    const offsetX = eventOffsetX - targetRect.width / 2; // Centering adjustment
+    const eventOffsetX = event.clientX / 1;
+    const offsetX = eventOffsetX - targetRect.width / 1; // Centering adjustment
   
     x.set(offsetX);
   };
@@ -64,7 +64,7 @@ export const LinkPreview = ({
       >
         <HoverCardPrimitive.Trigger
           onMouseMove={handleMouseMove}
-          className={cn("text-black dark:text-white", className)}
+          className={cn("text-black dark:text-white z-20", className)}
           href={url}
         >
           {children}
@@ -98,7 +98,7 @@ export const LinkPreview = ({
               >
                 <Link
                   href={url}
-                  className="block"
+                  className="block -z-10 relative"
                   style={{ fontSize: 0 }}
                 >
                   <Image
@@ -108,7 +108,7 @@ export const LinkPreview = ({
                     quality={quality}
                     layout={layout}
                     priority={true}
-                    className="rounded-lg z-50 relative"
+                    className="rounded-lg z-[9999]"
                     alt="preview image"
                   />
                 </Link>

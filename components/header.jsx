@@ -75,7 +75,7 @@ const Header = () => {
                     </TextAnimate>
                 </div>
             </nav>
-            <div id="menuBtn" className="lg:hidden fixed bottom-5 right-5 z-[9]">
+            <div id="menuBtn" className="lg:hidden fixed bottom-5 right-5 z-50">
                 <button onClick={toggleMenu} className={classNames(menuOpen ? "bg-black text-white border-white" : "bg-white text-black border-black", "duration-700 border uppercase px-2 py-1 rounded-s-full rounded-e-full")}>
                     {menuOpen ? "close" : "menu"}
                 </button>
