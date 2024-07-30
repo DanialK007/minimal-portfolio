@@ -5,11 +5,13 @@ import project from "@/components/image/leigaMockup.png";
 import FloatBtn from "@/components/FloatBtn.jsx";
 import TextAnimate from "@/components/Layout/TextAnimate";
 import Work from "@/components/Work";
+import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
     return (
         <Page>
-            <div className="pt-28 lg:pt-32 p-4 lg:p-5 h-screen flex flex-col lg:flex-row justify-between">
+            <Portfolio />
+            {/* <div className="pt-28 lg:pt-32 p-4 lg:p-5 h-screen flex flex-col lg:flex-row justify-between">
                 <div className="flex h-full flex-col justify-between">
                     <TextAnimate>
                         <div className="text-2xl lg:text-6xl lg:leading-[4rem] lg:p-1"><span className="w-20 lg:w-28 inline-block"></span> My name is Kaung Khant Kyaw. I'm a <span className="text-red-500">Freelance Frontend Developer</span> based in Mandalay (MM).</div>
@@ -47,7 +49,7 @@ export default function Home() {
                     <div className="absolute -top-5 left-0 lg:top-auto lg:left-auto lg:bottom-0 lg:right-5 text-xs lg:text-sm text-zinc-500">Use menu to explore</div>
                 </div>
             </div>
-            <Work />
+            <Work /> */}
         </Page>
     )
 }

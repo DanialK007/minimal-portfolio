@@ -131,7 +131,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <div className="min-h-[5200px] relative">
+            <div className="min-h-[5200px] relative overflow-hidden">
                 <div className="fixed w-full top-1/2 lg:top-[30vh] flex items-center justify-end pe-20 lg:pe-40">
                     <div ref={gapRef} className="transform origin-center right-0 p-10 text-5xl ps-32 uppercase gap-[40px] flex flex-col font-[900] z-10 w-fit duration-300 ease-out">
                         <div ref={el => textRef.current[0] = el} className='duration-100 relative scale-[2]'>
@@ -153,23 +153,23 @@ const Portfolio = () => {
                 </div>
                 <div ref={topRef} className="fixed top-0 z-50 -translate-y-[50px] left-0 w-full grid grid-cols-4 text-lg font-extrabold py-2 leading-[1] px-8 text-white mix-blend-difference">
                     <div className="">Kaung Khant Kyaw</div>
-                    <div className="">LinkedIn</div>
+                    <a target='_blank' href="http://linkedin.com/in/kaung-khant-kyaw-688141212">LinkedIn</a>
                     <div className="">
-                        <div className="">(+95) 925 559 9863</div>
-                        <div className="">kaungkhantkyawdk@gmail.com</div>
+                        <a target='_blank' href='tel:+959255599863' className="">(+95) 925 559 9863</a>
+                        <a target='_blank' href='mailto:kaungkhantkyawdk@gmail.com' className="">kaungkhantkyawdk@gmail.com</a>
                     </div>
                 </div>
                 <div ref={navRef} className="fixed z-50 bottom-0 left-0 w-full font-bold text-xs px-8 py-2 grid grid-cols-5 text-white mix-blend-difference">
                     <div className="">Kaung Khant Kyaw® — 24<br/>@Copyright 2024</div>
                     <div className="flex flex-col">
-                        <a href="">Facebook</a>
-                        <a href="">Instagram</a>
+                        <a target='_blank' href="https://www.facebook.com/profile.php?id=100087994523929&mibextid=LQQJ4d">Facebook</a>
+                        <a target='_blank' href="https://www.instagram.com/reborn_danial?igsh=NTc4MTIwNjQ2YQ==">Instagram</a>
                     </div>
                     <div className="flex flex-col">
-                        <a href="">LinedIn</a>
-                        <a href="">GitHub</a>
+                        <a target='_blank' href="http://linkedin.com/in/kaung-khant-kyaw-688141212">LinkedIn</a>
+                        <a target='_blank' href="https://github.com/DanialK007">GitHub</a>
                     </div>
-                    <div className="text-end col-span-2">→ Let’s talk ←</div>
+                    <a target='_blank' href='mailto:kaungkhantkyawdk@gmail.com' className="text-end col-span-2">→ Let’s talk ←</a>
                 </div>
                 <div
                     ref={el => elementsRef.current[0] = el}
