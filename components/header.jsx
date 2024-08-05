@@ -54,11 +54,11 @@ const Header = () => {
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">
                             <Link className="hover:underline" href="/" onClick={closeMenu}>Home</Link>,
                             <Link className="hover:underline" href="/about" onClick={closeMenu}> About</Link>,
-                            <Link className="hover:underline" href="/project" onClick={closeMenu}> Project</Link>
+                            <Link className="hover:underline" href="/about" onClick={closeMenu}> Project</Link>
                         </div>
                         <div className="leading-[0.8rem] lg:leading-5 uppercase">
-                            <Link className="hover:underline" href="/service" onClick={closeMenu}>Services</Link>,
-                            <Link className="hover:underline" href="/contact" onClick={closeMenu}> Contact</Link>
+                            <Link className="hover:underline" href="/about" onClick={closeMenu}>Services</Link>,
+                            <Link className="hover:underline" href="/about" onClick={closeMenu}> Contact</Link>
                         </div>
                     </TextAnimate>
                     <TextAnimate className="pe-6 hidden lg:block lg:pe-5">
@@ -99,9 +99,9 @@ const Header = () => {
                     <div className="text-xl uppercase grid grid-cols-2 gap-5 py-4">
                         <Link className="hover:underline" href="/" onClick={closeMenu}>Home</Link>
                         <Link className="hover:underline" href="/about" onClick={closeMenu}> About</Link>
-                        <Link className="hover:underline" href="/project" onClick={closeMenu}>Project</Link>
-                        <Link className="hover:underline" href="/service" onClick={closeMenu}> Services</Link>
-                        <Link className="hover:underline" href="/contact" onClick={closeMenu}> Contact</Link>
+                        <Link className="hover:underline" href="/about" onClick={closeMenu}>Project</Link>
+                        <Link className="hover:underline" href="/about" onClick={closeMenu}> Services</Link>
+                        <Link className="hover:underline" href="/about" onClick={closeMenu}> Contact</Link>
                     </div>
                 </div>
                 <div className="mt-10">
