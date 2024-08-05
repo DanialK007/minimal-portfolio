@@ -52,7 +52,7 @@ const App = ({ Component, pageProps }) => {
                 <div className="w-10 h-10 bg-black animate-spin rounded-md"></div>
             </div> */}
 
-            {/* {isLoading && <Preloader />} */}
+            {isLoading && <Preloader />}
 
             <AnimatePresence mode="wait">
                 <motion.div key={router.pathname}>
