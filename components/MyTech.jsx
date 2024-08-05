@@ -20,7 +20,7 @@ const techStack = [
   },
   {
     name: "Bootstrap",
-    description: "An open-source CSS framework directed at responsive, front-end web development.",
+    description: "An Open-source CSS framework for responsive frontend design.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png",
   },
   {
@@ -30,17 +30,17 @@ const techStack = [
   },
   {
     name: "Git",
-    description: "A distributed version control system that tracks versions of files.",
+    description: "A version control system that tracks versions of files.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
   },
   {
     name: "Express.js",
-    description: "An open-source CSS framework directed at responsive, front-end web development.",
+    description: "A web application backend framework for Node.js.",
     img: "https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
   },
   {
     name: "Mongodb",
-    description: "A source-available, cross-platform, document-oriented database program.",
+    description: "A cross-platform, document-oriented database program.",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/768px-MongoDB_Logo.svg.png?20190626143224",
   },
   {
