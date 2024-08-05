@@ -16,6 +16,8 @@ import { FaArrowRight } from "react-icons/fa";
 import { LinkPreview } from "@/components/Preview";
 import { FlipWords } from "@/components/FlipWords";
 import { ContainerScroll } from "@/components/ContainerScroll";
+import { TechStack } from "@/components/TechStack";
+import { MyTechs, Review } from "@/components/MyTech";
 
 const projectList = [
     { name: "Acme", url: "https://acme-online-shop.vercel.app" , tech: "Next.js, Vercel, Tailwind", date: "July 2024" },
@@ -136,8 +138,8 @@ export default function About() {
                         <div className="text-xl group-hover:text-2xl duration-300 font-semibold col-span-2 flex gap-2 items-center">
                         <LinkPreview url={project.url}>
                         <div className="w-fit flex gap-2 items-center text-black group-hover:text-white hover:text-black relative peer">
-                            <span className="z-1 0">{project.name}</span>
-                            <span className="text-sm z-1 0 group-hover:text-xl peer-hover:rotate-0 duration-500 -rotate-45"><FaArrowRight /></span>
+                            <span className="z-1 peer">{project.name}</span>
+                            <span className="text-sm z-1 0 group-hover:text-xl hover:rotate-0 peer-hover:rotate-0 duration-500 -rotate-45"><FaArrowRight /></span>
                             {/* <div className="absolute right-0 -z-0 w-[200px] h-[130px] -translate-x-full duration-300 peer-hover:translate-x-10 rounded-e-full bg-white"></div> */}
                         </div>
                         </LinkPreview>
@@ -147,6 +149,13 @@ export default function About() {
                     </div>
                     ))}
                 </div>
+            </div>
+            <div className="p-5">
+                <div className="">
+                    <div className="text-3xl lg:text-6xl">My Tech Stacks</div>
+                    <div className="py-2 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae magnam impedit repellendus dignissimos minus libero consectetur commodi ut mollitia nam voluptatum blanditiis quia, aliquid perspiciatis amet, sequi eaque placeat molestias.</div>
+                </div>
+                <MyTechs />
             </div>
             <div className="min-h-screen p-5 overflow-hidden">
                 <ContainerScroll

@@ -47,7 +47,6 @@ export default function Home() {
                     <div className="absolute -top-5 left-0 lg:top-auto lg:left-auto lg:bottom-0 lg:right-5 text-xs lg:text-sm text-zinc-500">Use menu to explore</div>
                 </div>
             </div>
-            <Work />
         </Page>
     )
 }
